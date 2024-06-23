@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#new-game {
+    display: block;
+    margin: 30px auto 10px auto;
+    font-family: Verdana;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    color: #34d399;
+    border: 1px solid #34d399;
+    background-color: transparent;
+}
+
+.box {
+    /* height: 55vh;
+    width: 82vh; */
+    height: 47vh;
+    width: 70vh;
+    margin: 5vh auto 0px auto;
+    background-color: #064e3b;
+    border-radius: 15px;
+}
+
+.team-name {
+    font-family: Verdana;
+    font-size: 40px;
+    text-align: center;
+    color: #eeeeee;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(CursedTimer.ttf);
+}
+
+@font-face {
+    font-family: PermanentMarker;
+    src: url(PermanentMarker.ttf);
+}
+
+@font-face {
+    font-family: Jersey;
+    src: url(Jersey.ttf);
+}
+
+.score {
+    font-family: myFont;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: #f94f6d;
+    background-color: #080001;
+    height: 110px;
+    width: 167;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn-increment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: myFont;
+    font-size: 18px;
+    color: #34d399;
+    border: 1px solid #34d399;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+#new-game:hover {
+    background-color: #047857;
+}
+
+.btn-increment:hover {
+    background-color: #047857;
+}
+
+.highlight {
+    border: 2px solid #34d399;
+}
+
+html {
+    background-color: #d1fae5;
+}
+
+#website-name {
+    font-family: PermanentMarker;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+}
+
+#commentary {
+    font-family: Jersey;
+    font-size: 30px;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.basketball-img {
+    display: block;
+    width: 220px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goal-scored {
+    animation: bounce 1.5s linear;
+}
+
+/* Easy Method Just 1 bounce */
+/* @keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(30px);
+    }
+} */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(15px);
+    }
+
+    20% {
+        transform: translateY(30px);
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    60% {
+        transform: translateY(30px);
+    }
+
+    70% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Basketball is played in 4 quarters of 12 minutes each */
